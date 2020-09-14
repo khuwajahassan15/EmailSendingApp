@@ -1,4 +1,4 @@
-package com.sis.clightapp.model.GsonModel;
+package khuwaja.sis.sendemailfromapp.MainHelpers;
 
 public class Sale {
 
@@ -15,6 +15,15 @@ public class Sale {
     private String payment_preimage;
     private String description;
     private long expires_at;
+
+    public Sale(String mlabel, double mmsatoshi, String mstatus, long mpaid_at, String mpayment_preimage, String mdescription){
+       this.label=mlabel;
+       this.msatoshi=mmsatoshi;
+       this.status=mstatus;
+       this.paid_at=mpaid_at;
+       this.payment_preimage=mpayment_preimage;
+       this.description=mdescription;
+    }
 
     public String getLabel() {
         return label;
